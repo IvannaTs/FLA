@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+* {
+  -webkit-margin-before: 0 !important;
+  margin-block-start: 0 !important;
+  -webkit-margin-after: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+hr,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-weight: normal !important;
+}
+
+/* all divs are relative by default*/
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+}
+
+/* Make images easier to work with */
+.FLA img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+.FLA article>*+* {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+.FLA input,
+.FLA button,
+.FLA textarea,
+.FLA select {
+  padding: 0;
+  font: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+.FLA input:focus,
+.FLA button:focus,
+.FLA textarea:focus,
+.FLA select:focus {
+  outline: none;
+}
+
+.FLA a {
+  color: inherit !important;
+}
+
+.FLA ul,
+.FLA ol {
+  -webkit-margin-before: 0 !important;
+  margin-block-start: 0 !important;
+  -webkit-margin-after: 0 !important;
+  margin-block-end: 0 !important;
+  -webkit-padding-start: 0 !important;
+  padding-inline-start: 0 !important;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: var(--v-black);
+}
+
+.FLA section {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+:root {
+  --v-green: #356D10;
+  --v-light-grey: #F1F2F3;
+  --v-white: #fff;
+  --v-black: #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.FLA .inner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.FLA .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.FLA .inner-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+} 
+
+@media (max-width: 1200px) {
+  .FLA .container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .FLA .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .FLA .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 650px) {
+  .FLA .container {
+    padding: 0 25px;
+  }
+}
